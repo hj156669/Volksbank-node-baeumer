@@ -21,7 +21,23 @@
         <a href="login"><i class="fa fa-sign-out"></i> Abmelden</a>
     </header>
     <main>
-        <H1>Geld anlegen</H1>
+        <h1>Geld anlegen</h1>
+
+        <h2>Geben Sie hier Ihren Wunschbetrag an, um auszurechnen, wieviele Zinsen Sie nach der gewünschten Laufzeit bekommen werden</h2>
+
+        <!--Hier kommt das Formular hin:-->
+
+        <form method="post">
+            <!--Das Label zeigt dem Kunden Text im Formular an-->
+            <label>Gewünschter Betrag in Euro</label></br>
+            <!--Das Eingabefeld hat den type number, womit die EIngabe von Zahlen erzwungen wird-->
+            <!--Der Name lautet Betrag. Der Server greift über den Namen auf das Input zu.-->
+            <input type="number" name="Betrag" value=<%=Betrag%>></br>
+            <label>Gewünschte Laufzeit in Jahren</label></br>
+            <input type="number" name="Laufzeit"></br>
+            <button type="submit" formaction="/geldAnlegen">Zinsen berechnen</button>
+        </form>
+
     </main>
 
     <footer>
