@@ -34,9 +34,12 @@
             <!--Der Name lautet Betrag. Der Server greift über den Namen auf das Input zu.-->
             <input type="number" name="Betrag" value=<%=Betrag%>></br>
             <label>Gewünschte Laufzeit in Jahren</label></br>
-            <input type="number" name="Laufzeit"></br>
+            <input type="number" name="Laufzeit"value=<%=Laufzeit%>></br>
+            <!--Die formaction legt fest, dass auf dem Server die app.post('/geldAnlegen') abgearbeitet wird,
+            solbald der Kunde den Button drückt.-->
             <button type="submit" formaction="/geldAnlegen">Zinsen berechnen</button>
         </form>
+        <p><%=Meldung%></p>
 
     </main>
 
