@@ -3,8 +3,10 @@ class Kunde{
 	constructor(){
 		this.Nachname
 		this.Vorname
-		this.benutzername
+		this.Benutzername
 		this.Kennwort
+		// IstEingeloggt ist ein boolean
+		// Der Wert ist entweder wahr oder falsch
 		this.IstEingeloggt
 	}
 }
