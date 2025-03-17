@@ -219,7 +219,7 @@ app.post('/login', (req, res) => {
 
 
 // Mit listen() wird der Server angewiesen, auf den angegebenen Host und
-// Port zu lauschen.  
+// Port zu lauschen..
 app.listen(PORT, HOST);
 
 // Mit der Anweisung console.log() wird dem Server-Administrator auf der
